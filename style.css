@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #3b4cca;
+    margin: 0;
+    text-shadow: 2px 2px #ffde00;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #2a75bb;
+    margin-top: 0.5rem;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#pokemon-input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+#pokemon-input:focus {
+    border-color: #3b4cca;
+    outline: none;
+}
+
+#search-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #3b4cca;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #2a75bb;
+}
+
+#initial-message {
+    text-align: center;
+    color: #777;
+    font-size: 1.1rem;
+}
+
+#pokemon-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.pokemon-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.pokemon-card h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #3b4cca;
+    margin-top: 0;
+}
+
+.pokemon-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.info-list li {
+    background-color: #e6e9ee;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-list li strong {
+    color: #2a75bb;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 1.2rem;
+    text-align: center;
+}
